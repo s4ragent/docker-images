@@ -59,8 +59,7 @@ RUN chmod ug+x $INSTALL_DIR/*.sh && \
     $INSTALL_DIR/$CHECK_SPACE_FILE && \
     rm -f $INSTALL_DIR/$CHECK_SPACE_FILE && \
     $INSTALL_DIR/$SETUP_LINUX_FILE && \
-    rm -f $INSTALL_DIR/$SETUP_LINUX_FILE && \
-    rm -rf $INSTALL_DIR
+    rm -f $INSTALL_DIR/$SETUP_LINUX_FILE
 
 
 
