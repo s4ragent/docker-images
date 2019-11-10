@@ -49,6 +49,8 @@ ENV PATH=$ORACLE_HOME/bin:$ORACLE_HOME/OPatch/:/usr/sbin:$PATH \
     LD_LIBRARY_PATH=$ORACLE_HOME/lib:/usr/lib \
     CLASSPATH=$ORACLE_HOME/jlib:$ORACLE_HOME/rdbms/jlib
 
+ENV ORACLE_DOCKER_INSTALL=true
+
 # Copy files needed during both installation and runtime
 # -------------
 COPY $SETUP_LINUX_FILE $CHECK_SPACE_FILE $INSTALL_DIR/
